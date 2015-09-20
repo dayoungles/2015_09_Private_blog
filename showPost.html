@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div.img{
+            display:inline-block;
+            width:80%;
+
+        }
+        img.title{
+            width:80%;
+            height:100px;
+        }
+        div.searchTab{
+            /*float:right;*/
+            width:200px;
+            height:50px;
+
+        }
+        input.search{
+            width: 200px;
+            border-radius: 10px;
+        }
+        div.contents{
+            border:2px solid grey;
+            background-color: #fffda9;
+            width:80%;
+            padding:40px;
+        }
+        div.titleBox{
+            position:relative;
+            width:100%;
+            height:100px;
+
+        }
+        div.titleBox p.title{
+            font-size:30px;
+            margin:10px;
+        }
+        div.titleBox p.date {
+            font-size: 15px;
+            float: right;
+            margin: 10px;
+        }
+        p.written {
+            font-size:20px;
+
+        }
+        p.tag{
+            font-size:15px;
+            color:dimgrey;
+
+        }
+        div.comment{
+            font-size:15px;
+            border:1px solid gray;
+            background-color: #cece97;
+            border-radius: 5px;
+            height:50px;
+
+        }
+        div.comments{
+            border:1px solid grey;
+            width:80%;
+
+
+        }
+    </style>
+</head>
+<body>
+    <container>
+        <div class="upper">
+            <div class="img">
+                <img src="/Users/dayoungle/proj/nodejs/express_project/img/postpage.png" class="title"/>
+            </div>
+            <div class="searchTab">
+                <input type="text" class="search" />
+            </div>
+        </div>
+        <div class="under">
+            <div class="contents">
+                <div class="titleBox">
+                    <p class="title">title</p>
+                    <p class="date">2015-01-01 12:00</p>
+                </div>
+                <div class="content">
+                    <p class="written">
+                        contents
+                    </p>
+                </div>
+                <div class="tags">
+                    <p class="tag">#tag #tagee</p>
+                </div>
+            </div>
+        </div>
+        <div class="comments">
+            <!-- comment input box-->
+            <div class="commentInput">
+                <input type="text" class="commentBox"/>
+                <input type="submit" value="send comment"/>
+                <!-- TODO
+                    jquery 사용해서 eventlistener등록하고 ajax로 서버에 전송하기
+                -->
+            </div>
+            <div class="comment">
+                <span class="user">dayg</span>
+                <span class="said">옛다 댓글</span>
+                <span class="commentDate">2017-12-12</span>
+            </div>
+
+        </div>
+    </container>
+
+</body>
+</html>

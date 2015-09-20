@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>private home</title>
+    <style>
+        div.container {
+            width:80%;
+            margin: 0px auto;
+            position: relative;
+
+        }
+        div.title{
+            width:80%;
+
+        }
+        img.title {
+            width:80%;
+            height:350px;
+            margin:10px;
+        }
+        div.left {
+            float:left;
+        }
+        div.right{
+            float:right;
+        }
+        div.post{
+            width:80%;
+            height:50px;
+            border-radius: 5px;
+            background-color: #cece97;
+            margin:10px;
+        }
+        div.page{
+            width:80%;
+        }
+        div.pagePointer{
+            width: 100px;
+            height:40px;
+            border-radius: 15px;
+            background-color: #507a79;
+        }
+        div.pBox{
+            /*margin:0px auto;*/
+        }
+        p{
+            font-size:15px;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="titleImg">
+            <img src="/Users/dayoungle/proj/nodejs/express_project/img/sample.png" class="title"/>
+        </div>
+        <div class="showList">
+            <div class="post">
+                <div class="postNum">
+                    dummylist1//title input
+                </div>
+            </div>
+            <div class="post">
+                <div class="postNum">
+                    8
+                </div>
+                <div class="postTitle">
+                    dummyList2 // title input
+                </div>
+            </div>
+
+        </div>
+        <div class="page">
+            <div class="left pagePointer">
+                <div class="pBox">
+                    <p class="arrow">newer</p>
+                </div>
+            </div>
+            <div class="right pagePointer">
+                <div class="pBox">
+                    <p class="arrow">older</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
